@@ -51,6 +51,7 @@ export default function Productos(){
                 <th>nombre</th>
                 <th>usuario</th>
                 <th>foto</th>
+                <th>Eliminar | Editar</th>
             </tr>
             </thead>
 

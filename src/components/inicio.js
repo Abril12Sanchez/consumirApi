@@ -32,6 +32,7 @@ export default function Usuarios(){
                     <td>{usuario.id}</td>
                     <td>{usuario.nombre}</td>
                     <td>{usuario.usuario}</td>
+                    <td>Eliminar | Editar</td>
                     <td><img src={foto} width="100px" alt="foto de usuario"/></td>
                     <td>
                         <Link to={editar}>Editar</Link> / 
