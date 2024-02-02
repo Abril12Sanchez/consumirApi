@@ -7,7 +7,8 @@ export default function Usuarios(){
 
     useEffect(()=>{
         //la que nos entrega la api
-        axios.get("https://zero4nfa-password2.onrender.com/api/mostrarUsuarios")
+        // axios.get("https://zero4nfa-password2.onrender.com/api/mostrarUsuarios")
+        axios.get("http://localhost:3000/api/mostrarUsuarios")
         .then((respuesta)=>{
             console.log(respuesta);
             setDataUsuarios(respuesta.data);
@@ -32,7 +33,6 @@ export default function Usuarios(){
                     <td>{usuario.id}</td>
                     <td>{usuario.nombre}</td>
                     <td>{usuario.usuario}</td>
-                    <td>Eliminar | Editar</td>
                     <td><img src={foto} width="100px" alt="foto de usuario"/></td>
                     <td>
                         <Link to={editar}>Editar</Link> / 
@@ -49,8 +49,9 @@ export default function Usuarios(){
             <tr>
                 <th>id</th>
                 <th>nombre</th>
-                <th>usuario</th>
+                <th>Usuario</th>
                 <th>foto</th>
+                <th>Eliminar | Editar</th>
             </tr>
             </thead>
 

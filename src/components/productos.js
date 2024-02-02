@@ -7,8 +7,8 @@ export default function Productos(){
 
     useEffect(()=>{
         //la que nos entrega la api
-        axios.get("https://zero4nfa-password2.onrender.com/producto/producto/api/mostrarProducto")
-       // axios.get("http://localhost:3000/producto/producto/api/mostrarProducto")
+        // axios.get("https://zero4nfa-password2.onrender.com/producto/producto/api/mostrarProducto")
+       axios.get("http://localhost:3000/producto/producto/api/mostrarProducto")
         .then((respuesta)=>{
             console.log(respuesta);
             setDataProductos(respuesta.data);
@@ -32,7 +32,7 @@ export default function Productos(){
                 <tr className="aling-middle">
                     <td>{producto.id}</td>
                     <td>{producto.nombre}</td>
-                    <td>{producto.usuario}</td>
+                    <td>{producto.descripcion}</td>
                     <td><img src={foto} width="100px" alt="foto de usuario"/></td>
                     <td>
                         <Link to={editar}>Editar</Link> / 
@@ -49,7 +49,7 @@ export default function Productos(){
             <tr>
                 <th>id</th>
                 <th>nombre</th>
-                <th>usuario</th>
+                <th>Descripcion</th>
                 <th>foto</th>
                 <th>Eliminar | Editar</th>
             </tr>
