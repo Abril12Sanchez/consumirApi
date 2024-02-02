@@ -7,8 +7,8 @@ export default function Usuarios(){
 
     useEffect(()=>{
         //la que nos entrega la api
-        // axios.get("https://zero4nfa-password2.onrender.com/api/mostrarUsuarios")
-        axios.get("http://localhost:3000/api/mostrarUsuarios")
+        axios.get("https://zero4nfa-password2.onrender.com/api/mostrarUsuarios")
+        // axios.get("http://localhost:3000/api/mostrarUsuarios")
         .then((respuesta)=>{
             console.log(respuesta);
             setDataUsuarios(respuesta.data);

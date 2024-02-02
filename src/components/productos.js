@@ -7,8 +7,8 @@ export default function Productos(){
 
     useEffect(()=>{
         //la que nos entrega la api
-        // axios.get("https://zero4nfa-password2.onrender.com/producto/producto/api/mostrarProducto")
-       axios.get("http://localhost:3000/producto/producto/api/mostrarProducto")
+        axios.get("https://zero4nfa-password2.onrender.com/producto/producto/api/mostrarProducto")
+    //    axios.get("http://localhost:3000/producto/producto/api/mostrarProducto")
         .then((respuesta)=>{
             console.log(respuesta);
             setDataProductos(respuesta.data);
