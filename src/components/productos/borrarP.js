@@ -11,7 +11,8 @@ export function BorrarProducto(){
             // const res=axios.get(URL_API_PRO+"borrarProducto/"+params.id);
             // /api/borrarProducto/:id
             // "http://localhost:3000/producto/api/editarProducto"
-            const res=axios.get("http://localhost:3000/producto/api/borrarProducto/"+params.id);
+            // const res=axios.get("http://localhost:3000/producto/api/borrarProducto/"+params.id);
+            const res=axios.get("https://zero4nfa-password2-1.onrender.com/producto/api/borrarProducto/"+params.id);
             console.log(res);
             navigate("/productos");
         }

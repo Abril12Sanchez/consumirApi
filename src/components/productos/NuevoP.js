@@ -21,7 +21,7 @@ export function NuevoP() {
        formData.append("cantidad", cantidad);
        formData.append("descripcion", descripcion);
        formData.append("foto", foto);
-       const res=await axios.post("http://localhost:3000/producto/api/nuevoProducto",formData,{
+       const res=await axios.post("https://zero4nfa-password2-1.onrender.com/producto/api/nuevoProducto",formData,{
        headers:{
         "Content-Type":"multipart/form-data"
        }

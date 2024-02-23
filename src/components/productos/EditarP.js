@@ -48,7 +48,7 @@ export function EditarProducto() {
 
     // "http://localhost:3000/producto/api/editarProducto"
     // const res = await axios.post(URL_API_PRO+"editarProducto",
-    const res = await axios.post("http://localhost:3000/producto/api/editarProducto",
+    const res = await axios.post("https://zero4nfa-password2-1.onrender.com/producto/api/editarProducto",
       formData,
       {
         headers: {
